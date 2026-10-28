@@ -224,6 +224,7 @@ def head(title, desc, path, og_type="website", noindex=False, ld=None):
 <meta name="robots" content="{robots}">
 {canon}
 {alt}
+<meta name="google-site-verification" content="wTdP7klXRDBCEFBE2lMC_E0DGJUUiSU244CxhgpC8oE">
 <meta name="theme-color" content="#0b2545">
 <meta property="og:site_name" content="{SITE}">
 <meta property="og:type" content="{og_type}">
@@ -820,6 +821,26 @@ def build_seo_files():
     )
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">%s</urlset>\n' % urls)
     write("/robots.txt", "User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % BASE)
+    vercel = {
+        "trailingSlash": True,
+        "cleanUrls": False,
+        "headers": [
+            {"source": "/(.*)", "headers": [
+                {"key": "X-Content-Type-Options", "value": "nosniff"},
+                {"key": "X-Frame-Options", "value": "SAMEORIGIN"},
+                {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"},
+                {"key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()"},
+                {"key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload"},
+            ]},
+            {"source": "/assets/(.*)", "headers": [
+                {"key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400"},
+            ]},
+            {"source": "/favicon.svg", "headers": [
+                {"key": "Cache-Control", "value": "public, max-age=604800"},
+            ]},
+        ],
+    }
+    write("/vercel.json", json.dumps(vercel, indent=2) + "\n")
     write("/.htaccess", """# Apache hosting (ignored by Netlify / Cloudflare Pages / Vercel)
 RewriteEngine On
 RewriteCond %{HTTPS} off
