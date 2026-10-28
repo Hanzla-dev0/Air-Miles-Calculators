@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Air Miles Calculator – Distance Between Airports</title>
+<meta name="description" content="Free air miles calculator: find the distance between any two airports in air miles, km and nautical miles, plus flight time. Fast, accurate, no sign-up.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://airmilescalculators.com/">
+<link rel="alternate" hreflang="en" href="https://airmilescalculators.com/"><link rel="alternate" hreflang="x-default" href="https://airmilescalculators.com/">
+<meta name="theme-color" content="#0b2545">
+<meta property="og:site_name" content="Air Miles Calculators">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Air Miles Calculator – Distance Between Airports">
+<meta property="og:description" content="Free air miles calculator: find the distance between any two airports in air miles, km and nautical miles, plus flight time. Fast, accurate, no sign-up.">
+<meta property="og:url" content="https://airmilescalculators.com/">
+<meta property="og:image" content="https://airmilescalculators.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Air Miles Calculator – Distance Between Airports">
+<meta name="twitter:description" content="Free air miles calculator: find the distance between any two airports in air miles, km and nautical miles, plus flight time. Fast, accurate, no sign-up.">
+<meta name="twitter:image" content="https://airmilescalculators.com/assets/og-image.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Air Miles Calculators","url":"https://airmilescalculators.com/","logo":"https://airmilescalculators.com/favicon.svg"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Air Miles Calculators","url":"https://airmilescalculators.com/","inLanguage":"en"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Air Miles Calculator","url":"https://airmilescalculators.com/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (web browser)","description":"Free air miles calculator: find the distance between any two airports in air miles, km and nautical miles, plus flight time. Fast, accurate, no sign-up.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is an air miles calculator?","acceptedAnswer":{"@type":"Answer","text":"An air miles calculator measures the shortest distance between two airports along the surface of the Earth (the great-circle distance) and shows it in miles, kilometres and nautical miles. Pick a departure and arrival airport and the result appears instantly."}},{"@type":"Question","name":"How do you calculate air miles between two airports?","acceptedAnswer":{"@type":"Answer","text":"Each airport has a latitude and longitude. The calculator applies the haversine formula to those coordinates, which accounts for the curvature of the Earth, and multiplies the result by the Earth's radius of 3,958.8 miles."}},{"@type":"Question","name":"Is this the same as the Air Miles loyalty programme?","acceptedAnswer":{"@type":"Answer","text":"No. This tool measures distance between airports. Frequent-flyer and loyalty schemes award points using their own rules, which may depend on the fare class, the airline, the partner and the status of the traveller rather than on distance alone."}},{"@type":"Question","name":"What is the difference between air miles, statute miles and nautical miles?","acceptedAnswer":{"@type":"Answer","text":"On this site air miles are shown as statute miles of great-circle distance, where one mile equals 1.609 kilometres. A nautical mile is longer than a statute mile in the other direction: one statute mile is about 0.869 nautical miles. Aviation navigation uses nautical miles, while many travellers and loyalty schemes use statute miles."}},{"@type":"Question","name":"How is the estimated flight time worked out?","acceptedAnswer":{"@type":"Answer","text":"Flight time is estimated as the distance divided by an average speed of 500 mph, plus 30 minutes for taxi, take-off, climb and landing. Real schedules vary with the aircraft, winds, air-traffic routing and airline timetable."}},{"@type":"Question","name":"Why is the distance flown longer than the calculator result?","acceptedAnswer":{"@type":"Answer","text":"Aircraft follow airways, avoid restricted airspace and weather, and adjust for wind, so the route actually flown is usually a little longer than the straight great-circle line between the airports."}},{"@type":"Question","name":"Which airports does the calculator cover?","acceptedAnswer":{"@type":"Answer","text":"It currently covers 128 major international airports across North America, South America, Europe, the Middle East, Africa, Asia and Oceania, searchable by city, airport name, country or IATA code."}}]}</script>
+</head>
+<body>
+<a href="#main" style="position:absolute;left:-999px" onfocus="this.style.left='8px'">Skip to content</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="./" aria-label="Air Miles Calculators home"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#1d7fd6"/><path d="M6 19.5l8.2-2.1 5.6-8.4c.5-.7 1.5-.9 2.1-.4.5.4.6 1 .3 1.6l-2.6 7 5.3-1.4c.8-.2 1.5.3 1.7 1 .2.8-.3 1.5-1.1 1.7l-7.6 2-5.8 5.3c-.6.5-1.5.5-2-.1-.4-.5-.4-1.2 0-1.7l3.4-4.1-5.3 1.4c-.8.2-1.6-.2-1.8-1-.1-.7.3-1.4 1.1-1.6z" fill="#fff"/></svg><span>Air Miles Calculators</span></a>
+<nav class="nav" aria-label="Main"><a href="./">Air Miles Calculator</a><a href="distance/">Popular Routes</a><a href="airports/">Airports</a><a href="air-miles-calculator-guide/">Guide</a></nav>
+</div></header>
+<div class="hero"><div class="wrap"><h1>Air Miles Calculator</h1><p class="lead">Calculate the distance between any two airports in air miles, kilometres and nautical miles, with an estimated flight time. Free, instant and no sign-up.</p></div></div>
+<main id="main"><div class="wrap">
+
+<div class="calc" id="calculator">
+  <form id="calc-form" novalidate aria-label="Air Miles Calculator">
+    <div class="field">
+      <label for="from">From airport</label>
+      <input id="from" type="text" placeholder="City, airport or code (e.g. JFK)" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="from-list" aria-expanded="false">
+      <ul class="suggest" id="from-list" role="listbox" hidden></ul>
+    </div>
+    <button class="btn swap" id="swap" type="button" aria-label="Swap airports" title="Swap airports">⇄</button>
+    <div class="field">
+      <label for="to">To airport</label>
+      <input id="to" type="text" placeholder="City, airport or code (e.g. LHR)" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="to-list" aria-expanded="false">
+      <ul class="suggest" id="to-list" role="listbox" hidden></ul>
+    </div>
+    <button class="btn" type="submit">Calculate air miles</button>
+  </form>
+  <p class="error" id="calc-error" role="alert"></p>
+  <div class="result" id="result" hidden aria-live="polite"></div>
+</div>
+
+<section class="block prose">
+<h2>Free air miles calculator for any flight</h2>
+<p>This air miles calculator tells you how far apart two airports are. Type a city, an airport name or a three-letter IATA code such as JFK or LHR, choose your departure and arrival airports, and press <strong>Calculate air miles</strong>. You get the distance in air miles (statute miles), kilometres and nautical miles, along with an estimated flight time.</p>
+<p>Use it to plan a trip, compare itineraries, check how many miles a journey covers, estimate the miles you may earn on a frequent-flyer scheme, or settle a geography argument. Every result is a great-circle distance, which is the shortest possible path between two points on the globe.</p>
+</section>
+
+<section class="block">
+<h2>How to use the air miles calculator</h2>
+<div class="cols">
+<div class="card"><h3>1. Choose your airports</h3><p>Start typing in the <em>From</em> and <em>To</em> boxes. Suggestions appear as you type and match city names, airport names, countries and IATA codes.</p></div>
+<div class="card"><h3>2. Calculate</h3><p>Press the button. The calculator reads the latitude and longitude of both airports and applies the haversine formula to work out the great-circle distance.</p></div>
+<div class="card"><h3>3. Read the result</h3><p>See the distance in air miles, kilometres and nautical miles, plus an estimated flight time. Open the route page for more detail.</p></div>
+</div>
+</section>
+
+<section class="block prose">
+<h2>What are air miles?</h2>
+<p>In everyday use, “air miles” means the distance between two places measured through the air, as the crow flies. It is the great-circle distance, not the length of any road, rail or sea route. Because the Earth is a sphere, the shortest path between two airports is an arc, which is why flights from North America to Europe often curve north on a flat map.</p>
+<p>The phrase is also used for loyalty points earned by flying. Those schemes have their own rules. This air miles calculator measures only the distance, which is a useful starting point when you want to estimate what a trip might earn.</p>
+</section>
+
+<section class="block">
+<h2>Distance units explained</h2>
+<table>
+<thead><tr><th>Unit</th><th>Equivalent</th><th>Typically used for</th></tr></thead>
+<tbody>
+<tr><td>1 air mile (statute mile)</td><td>1.609 km · 0.869 nautical miles</td><td>Travel planning, loyalty schemes in the US and UK</td></tr>
+<tr><td>1 kilometre</td><td>0.621 miles · 0.540 nautical miles</td><td>Most countries outside the US and UK</td></tr>
+<tr><td>1 nautical mile</td><td>1.852 km · 1.151 miles</td><td>Aviation and maritime navigation</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="block">
+<h2>Popular air miles routes</h2>
+<p>Jump straight to the distance, flight time and route details for some of the most searched city pairs.</p>
+<ul class="chips"><li><a href="distance/jfk-to-lhr/">New York to London</a></li><li><a href="distance/lax-to-jfk/">Los Angeles to New York</a></li><li><a href="distance/jfk-to-cdg/">New York to Paris</a></li><li><a href="distance/lhr-to-dxb/">London to Dubai</a></li><li><a href="distance/sin-to-syd/">Singapore to Sydney</a></li><li><a href="distance/lax-to-lhr/">Los Angeles to London</a></li><li><a href="distance/jfk-to-sfo/">New York to San Francisco</a></li><li><a href="distance/ord-to-lhr/">Chicago to London</a></li><li><a href="distance/jfk-to-fco/">New York to Rome</a></li><li><a href="distance/jfk-to-mad/">New York to Madrid</a></li><li><a href="distance/jfk-to-fra/">New York to Frankfurt</a></li><li><a href="distance/jfk-to-ams/">New York to Amsterdam</a></li><li><a href="distance/lhr-to-sin/">London to Singapore</a></li><li><a href="distance/lhr-to-del/">London to Delhi</a></li><li><a href="distance/lhr-to-bom/">London to Mumbai</a></li><li><a href="distance/lhr-to-hkg/">London to Hong Kong</a></li><li><a href="distance/lhr-to-syd/">London to Sydney</a></li><li><a href="distance/lhr-to-cdg/">London to Paris</a></li><li><a href="distance/lhr-to-ams/">London to Amsterdam</a></li><li><a href="distance/lhr-to-fra/">London to Frankfurt</a></li><li><a href="distance/lhr-to-mad/">London to Madrid</a></li><li><a href="distance/lhr-to-fco/">London to Rome</a></li><li><a href="distance/lhr-to-dub/">London to Dublin</a></li><li><a href="distance/lhr-to-ist/">London to Istanbul</a></li></ul>
+<p style="margin-top:14px"><a href="distance/">See all popular routes →</a></p>
+</section>
+
+<section class="block">
+<h2>Major airports</h2>
+<ul class="chips"><li><a href="airport/lhr/">LHR – London</a></li><li><a href="airport/jfk/">JFK – New York</a></li><li><a href="airport/dxb/">DXB – Dubai</a></li><li><a href="airport/sin/">SIN – Singapore</a></li><li><a href="airport/hkg/">HKG – Hong Kong</a></li><li><a href="airport/lax/">LAX – Los Angeles</a></li><li><a href="airport/cdg/">CDG – Paris</a></li><li><a href="airport/fra/">FRA – Frankfurt</a></li><li><a href="airport/del/">DEL – Delhi</a></li><li><a href="airport/syd/">SYD – Sydney</a></li><li><a href="airport/ist/">IST – Istanbul</a></li><li><a href="airport/nrt/">NRT – Tokyo</a></li></ul>
+<p style="margin-top:14px"><a href="airports/">Browse all airports →</a></p>
+</section>
+
+<section class="block prose">
+<h2>Air miles calculator FAQ</h2>
+<details><summary>What is an air miles calculator?</summary><p>An air miles calculator measures the shortest distance between two airports along the surface of the Earth (the great-circle distance) and shows it in miles, kilometres and nautical miles. Pick a departure and arrival airport and the result appears instantly.</p></details><details><summary>How do you calculate air miles between two airports?</summary><p>Each airport has a latitude and longitude. The calculator applies the haversine formula to those coordinates, which accounts for the curvature of the Earth, and multiplies the result by the Earth&#x27;s radius of 3,958.8 miles.</p></details><details><summary>Is this the same as the Air Miles loyalty programme?</summary><p>No. This tool measures distance between airports. Frequent-flyer and loyalty schemes award points using their own rules, which may depend on the fare class, the airline, the partner and the status of the traveller rather than on distance alone.</p></details><details><summary>What is the difference between air miles, statute miles and nautical miles?</summary><p>On this site air miles are shown as statute miles of great-circle distance, where one mile equals 1.609 kilometres. A nautical mile is longer than a statute mile in the other direction: one statute mile is about 0.869 nautical miles. Aviation navigation uses nautical miles, while many travellers and loyalty schemes use statute miles.</p></details><details><summary>How is the estimated flight time worked out?</summary><p>Flight time is estimated as the distance divided by an average speed of 500 mph, plus 30 minutes for taxi, take-off, climb and landing. Real schedules vary with the aircraft, winds, air-traffic routing and airline timetable.</p></details><details><summary>Why is the distance flown longer than the calculator result?</summary><p>Aircraft follow airways, avoid restricted airspace and weather, and adjust for wind, so the route actually flown is usually a little longer than the straight great-circle line between the airports.</p></details><details><summary>Which airports does the calculator cover?</summary><p>It currently covers 128 major international airports across North America, South America, Europe, the Middle East, Africa, Asia and Oceania, searchable by city, airport name, country or IATA code.</p></details>
+<p>Want the maths? Read <a href="air-miles-calculator-guide/">how air miles are calculated</a>.</p>
+</section>
+
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><h4>Air Miles Calculators</h4><p>A free air miles calculator for measuring the distance between airports in air miles, kilometres and nautical miles, with estimated flight times.</p></div>
+<div><h4>Explore</h4><ul>
+<li><a href="./">Air Miles Calculator</a></li><li><a href="distance/">Popular routes</a></li><li><a href="airports/">Airports</a></li><li><a href="air-miles-calculator-guide/">How air miles are calculated</a></li>
+</ul></div>
+<div><h4>Popular routes</h4><ul><li><a href="distance/jfk-to-lhr/">New York to London distance</a></li><li><a href="distance/lax-to-jfk/">Los Angeles to New York distance</a></li><li><a href="distance/jfk-to-cdg/">New York to Paris distance</a></li><li><a href="distance/lhr-to-dxb/">London to Dubai distance</a></li><li><a href="distance/sin-to-syd/">Singapore to Sydney distance</a></li><li><a href="distance/lax-to-lhr/">Los Angeles to London distance</a></li></ul></div>
+</div>
+<div class="copy">© 2026 Air Miles Calculators. <a href="about/">About</a> · <a href="contact/">Contact</a> · <a href="privacy-policy/">Privacy Policy</a> · <a href="terms/">Terms</a> · Distances are great-circle estimates for information only and must not be used for navigation.</div>
+</div></footer>
+<script src="assets/airports.js" defer></script><script src="assets/app.js" defer></script>
+</body>
+</html>

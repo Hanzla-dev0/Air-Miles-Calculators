@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Air Miles Are Calculated – Great-Circle Distance</title>
+<meta name="description" content="Learn how an air miles calculator works: the haversine formula, great-circle distance, units, and why flown distance differs from the straight line.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://airmilescalculators.com/air-miles-calculator-guide/">
+<link rel="alternate" hreflang="en" href="https://airmilescalculators.com/air-miles-calculator-guide/"><link rel="alternate" hreflang="x-default" href="https://airmilescalculators.com/air-miles-calculator-guide/">
+<meta name="theme-color" content="#0b2545">
+<meta property="og:site_name" content="Air Miles Calculators">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Air Miles Are Calculated – Great-Circle Distance">
+<meta property="og:description" content="Learn how an air miles calculator works: the haversine formula, great-circle distance, units, and why flown distance differs from the straight line.">
+<meta property="og:url" content="https://airmilescalculators.com/air-miles-calculator-guide/">
+<meta property="og:image" content="https://airmilescalculators.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Air Miles Are Calculated – Great-Circle Distance">
+<meta name="twitter:description" content="Learn how an air miles calculator works: the haversine formula, great-circle distance, units, and why flown distance differs from the straight line.">
+<meta name="twitter:image" content="https://airmilescalculators.com/assets/og-image.png">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://airmilescalculators.com/"},{"@type":"ListItem","position":2,"name":"Guide","item":"https://airmilescalculators.com/air-miles-calculator-guide/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What formula does an air miles calculator use?","acceptedAnswer":{"@type":"Answer","text":"Most use the haversine formula, which gives the great-circle distance between two points from their latitude and longitude on a sphere."}},{"@type":"Question","name":"Is the great-circle distance exact?","acceptedAnswer":{"@type":"Answer","text":"It is very close. The Earth is slightly flattened, so more complex ellipsoidal formulas can differ by up to roughly 0.5%, which is small for travel planning."}},{"@type":"Question","name":"Do airlines use air miles to award frequent-flyer points?","acceptedAnswer":{"@type":"Answer","text":"Some do, but many now award points by fare, cabin and spend. Always check the rules of your loyalty programme."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How Air Miles Are Calculated – Great-Circle Distance","description":"Learn how an air miles calculator works: the haversine formula, great-circle distance, units, and why flown distance differs from the straight line.","datePublished":"2026-10-27","dateModified":"2026-10-27","mainEntityOfPage":"https://airmilescalculators.com/air-miles-calculator-guide/","author":{"@type":"Organization","name":"Air Miles Calculators"},"publisher":{"@type":"Organization","name":"Air Miles Calculators"}}</script>
+</head>
+<body>
+<a href="#main" style="position:absolute;left:-999px" onfocus="this.style.left='8px'">Skip to content</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="../" aria-label="Air Miles Calculators home"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#1d7fd6"/><path d="M6 19.5l8.2-2.1 5.6-8.4c.5-.7 1.5-.9 2.1-.4.5.4.6 1 .3 1.6l-2.6 7 5.3-1.4c.8-.2 1.5.3 1.7 1 .2.8-.3 1.5-1.1 1.7l-7.6 2-5.8 5.3c-.6.5-1.5.5-2-.1-.4-.5-.4-1.2 0-1.7l3.4-4.1-5.3 1.4c-.8.2-1.6-.2-1.8-1-.1-.7.3-1.4 1.1-1.6z" fill="#fff"/></svg><span>Air Miles Calculators</span></a>
+<nav class="nav" aria-label="Main"><a href="../">Air Miles Calculator</a><a href="../distance/">Popular Routes</a><a href="../airports/">Airports</a><a href="../air-miles-calculator-guide/">Guide</a></nav>
+</div></header>
+<div class="hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>›</span><span aria-current="page" style="margin:0;opacity:1">Guide</span></nav><h1>How Air Miles Are Calculated</h1><p class="lead">The maths behind every air miles calculator, explained in plain English.</p></div></div>
+<main id="main"><div class="wrap">
+
+
+<article class="block prose">
+<h2>Great-circle distance</h2>
+<p>An air miles calculator reports the shortest distance between two airports across the surface of the Earth. This is called the great-circle distance, because the shortest path lies along a circle whose centre is the centre of the Earth. On a flat map it looks curved; on a globe it is a straight line pulled tight.</p>
+
+<h2>The haversine formula</h2>
+<p>Given the latitude (φ) and longitude (λ) of two airports, the haversine formula is:</p>
+<code class="f">a = sin²(Δφ / 2) + cos φ₁ · cos φ₂ · sin²(Δλ / 2)<br>c = 2 · atan2(√a, √(1 − a))<br>distance = R · c</code>
+<p>Here R is the Earth's mean radius: 3,958.8 miles, 6,371 kilometres or 3,440 nautical miles, depending on the unit you want.</p>
+
+<h2>Worked example: JFK to LHR</h2>
+<p>John F. Kennedy International Airport sits at 40.64° N, 73.78° W and Heathrow Airport at 51.47° N, 0.45° W. Putting those coordinates through the formula gives 3,443 air miles (5,540 km). You can check it on the <a href="../distance/jfk-to-lhr/">New York to London distance page</a>.</p>
+
+<h2>Why flights cover more than the air miles distance</h2>
+<ul>
+<li><strong>Airways and air-traffic control:</strong> aircraft follow published routes.</li>
+<li><strong>Weather and winds:</strong> crews route around storms and towards favourable jet streams.</li>
+<li><strong>Restricted airspace:</strong> some regions must be avoided.</li>
+<li><strong>Safety rules:</strong> long over-water routes must keep suitable diversion airports within range.</li>
+</ul>
+
+<h2>Air miles, kilometres and nautical miles</h2>
+<p>One statute mile is 1.609 km and about 0.869 nautical miles. Pilots and air-traffic controllers work in nautical miles, but travel sites and many loyalty schemes use statute miles, which is why this air miles calculator shows all three.</p>
+
+<h2>Estimating flight time</h2>
+<p>A simple rule of thumb divides the distance by 500 mph and adds half an hour for taxi, take-off and landing. It is a good planning estimate; the timetable of your airline is always the final word.</p>
+
+<h2>Frequently asked questions</h2>
+<details><summary>What formula does an air miles calculator use?</summary><p>Most use the haversine formula, which gives the great-circle distance between two points from their latitude and longitude on a sphere.</p></details><details><summary>Is the great-circle distance exact?</summary><p>It is very close. The Earth is slightly flattened, so more complex ellipsoidal formulas can differ by up to roughly 0.5%, which is small for travel planning.</p></details><details><summary>Do airlines use air miles to award frequent-flyer points?</summary><p>Some do, but many now award points by fare, cabin and spend. Always check the rules of your loyalty programme.</p></details>
+<p><a href="../">Try the air miles calculator →</a></p>
+</article>
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><h4>Air Miles Calculators</h4><p>A free air miles calculator for measuring the distance between airports in air miles, kilometres and nautical miles, with estimated flight times.</p></div>
+<div><h4>Explore</h4><ul>
+<li><a href="../">Air Miles Calculator</a></li><li><a href="../distance/">Popular routes</a></li><li><a href="../airports/">Airports</a></li><li><a href="../air-miles-calculator-guide/">How air miles are calculated</a></li>
+</ul></div>
+<div><h4>Popular routes</h4><ul><li><a href="../distance/jfk-to-lhr/">New York to London distance</a></li><li><a href="../distance/lax-to-jfk/">Los Angeles to New York distance</a></li><li><a href="../distance/jfk-to-cdg/">New York to Paris distance</a></li><li><a href="../distance/lhr-to-dxb/">London to Dubai distance</a></li><li><a href="../distance/sin-to-syd/">Singapore to Sydney distance</a></li><li><a href="../distance/lax-to-lhr/">Los Angeles to London distance</a></li></ul></div>
+</div>
+<div class="copy">© 2026 Air Miles Calculators. <a href="../about/">About</a> · <a href="../contact/">Contact</a> · <a href="../privacy-policy/">Privacy Policy</a> · <a href="../terms/">Terms</a> · Distances are great-circle estimates for information only and must not be used for navigation.</div>
+</div></footer>
+
+</body>
+</html>
