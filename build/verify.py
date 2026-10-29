@@ -31,5 +31,5 @@ for k, v in descs.items():
 print("pages:", len(pages), "problems:", len(problems))
 for x in problems[:30]: print(x)
 sm = open(os.path.join(site, "sitemap.xml")).read()
-locs = re.findall(r"<loc>https://airmilescalculators.com(.*?)</loc>", sm)
+locs = re.findall(r"<loc>https?://[^/]+(.*?)</loc>", sm)
 print("sitemap urls:", len(locs), "missing files:", [l for l in locs if not exists(l)][:5])

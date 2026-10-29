@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://airmilescalculators.com/sitemap.xml
+Sitemap: https://airmilescalculator.vercel.app/sitemap.xml

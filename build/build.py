@@ -14,7 +14,7 @@ import shutil
 from airports_data import AIRPORTS, ROUTES
 
 # ----------------------------------------------------------------- config
-BASE = "https://airmilescalculators.com"
+BASE = os.environ.get("AMC_BASE", "https://airmilescalculators.com").rstrip("/")
 SITE = "Air Miles Calculators"
 MAIN_KW = "Air Miles Calculator"
 CONTACT_EMAIL = "contact@airmilescalculators.com"
